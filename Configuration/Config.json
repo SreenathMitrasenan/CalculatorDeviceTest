@@ -1,0 +1,34 @@
+{
+	"url": {
+		"QAT": "",
+		"CalcApp": "https://rbihubcodechallenge.github.io/calculator/index.html",
+		"api": "http://localhost:3000/api/users",
+		"swagapp": "https://www.saucedemo.com/"
+	},
+	"environment": {
+		"current": "local"
+	},
+	"files": {
+		"configuration": "Config.json"
+	},
+	"browserinfo": {
+		"currentbrowser": "Chrome"
+	},
+	"defaultwait": {
+		"wait": "10"
+	},
+	"browserlistinfo": {
+		"chrome": "Chrome",
+		"mozilla": "Firefox",
+		"safari": "Safari",
+		"edge": "Edge"
+	},
+	"envlistinfo": {
+		"1": "local",
+		"2": "remote"
+	},
+	"testsuite": {
+		"testtype": "api"
+	}
+
+}

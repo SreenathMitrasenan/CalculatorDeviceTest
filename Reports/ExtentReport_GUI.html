@@ -1,0 +1,1697 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <title>EMAutomation</title>
+ <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/spark/css/spark-style.css" rel="stylesheet" />
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ <script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+ <style>.extent .card-panel-test { font-family: 'Barlow', sans-serif !important; font-size: 16px; color: #333; }</style>
+</head>
+<body class="spa bdd-report dark">
+ <div class="app">
+  <div class="layout">
+   <div class="header navbar">
+ <div class="vheader">
+  <div class="nav-logo">
+   <a href="#">
+	 <div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/commons/img/logo.png')"></div>
+   </a>
+  </div>
+  <ul class="nav-left">
+   <li class="search-box">
+	<a class="search-toggle" href="#"><i class="search-icon fa fa-search"></i><i class="search-icon-close fa fa-close"></i></a>
+   </li>
+   <li class="search-input">
+    <input id="search-tests" class="form-control" type="text" placeholder="Search...">
+   </li>
+  </ul>
+  <ul class="nav-right">
+   <li class="m-r-10"><a href="#"><span class="badge badge-primary">Automated Execution Reports</span></a></li>
+   <li class="m-r-10">
+    <a href="#"><span class="badge badge-primary">03-06-2026 15:06:47</span></a>
+   </li>
+  </ul>
+ </div>
+</div>
+   <div class="side-nav">
+ <div class="side-nav-inner">
+  <ul class="side-nav-menu">
+   <li class="nav-item dropdown" onclick="toggleView('test-view')">
+    <a id="nav-test" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-list"></i></span>
+    </a>
+   </li>
+   <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+    <a id="nav-dashboard" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-bar-chart"></i></span>
+    </a>
+   </li>
+  </ul>
+ </div>
+</div>
+
+   <div class="vcontainer">
+    <div class="main-content">
+     
+
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+      <ul class="tools pull-left">
+        <li><a href="#"><span class="font-size-14">Tests</span></a></li>
+      </ul>
+      <ul class="tools text-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+          <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+ <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>             <div class="dropdown-divider"></div>
+            <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item" status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">CalculatorDeviceTest</p>
+            <p class="text-sm">
+              <span>15:06:47</span> / <span>150283.95 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">CalculatorDeviceTest</h5>
+                  <span class='badge badge-success'>03-06-2026 15:06:47</span>
+                  <span class='badge badge-danger'>03-06-2026 15:09:17</span>
+                  <span class='badge badge-default'>150283.95 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+  <div class="accordion mt-4">
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 01_Verify calculator application displays all numerals/characters on screen (zeroButton, 0)</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on zeroButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '0'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When  I verify the element is displayed on screen as 0</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">2 </span></td><td><span style="font-size: 0.9em;">Validation Successful: Calculator display successfully shows the expected value: '0'.</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on cancelButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">3 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element 'C'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 01_Verify calculator application displays all numerals/characters on screen (oneButton, 1)</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on oneButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '1'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When  I verify the element is displayed on screen as 1</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">2 </span></td><td><span style="font-size: 0.9em;">Validation Successful: Calculator display successfully shows the expected value: '1'.</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on cancelButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">3 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element 'C'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 01_Verify calculator application displays all numerals/characters on screen (twoButton, 2)</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on twoButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '2'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When  I verify the element is displayed on screen as 2</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">2 </span></td><td><span style="font-size: 0.9em;">Validation Successful: Calculator display successfully shows the expected value: '2'.</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on cancelButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">3 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element 'C'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="17"><span class="badge log fail-bg mr-2">Fail</span>Scenario: 01_Verify calculator application displays all numerals/characters on screen (threeButton, 3)</div>
+          </div>
+        </div>
+            <div class="">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on threeButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '3'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step fail-bg" title="">
+                    <span>When When: I verify the element is displayed on screen as 3</span>
+                    
+    <div>
+  The calculator display did not contain the expected execution total.
+  String lengths are both 1. Strings differ at index 0.
+  Expected: "3"
+  But was:  "0"
+  -----------^
+    </div>
+    <div>
+FAIL
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='C:\Users\ellip\Desktop\ASSIGNMENT\NewCode\CalculatorDeviceTest\CalculatorDeviceTest\Reports\Screenshots\632026 30711 PM.png' src="C:\Users\ellip\Desktop\ASSIGNMENT\NewCode\CalculatorDeviceTest\CalculatorDeviceTest\Reports\Screenshots\632026 30711 PM.png">
+  </div>
+ </div>
+    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="21"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 01_Verify calculator application displays all numerals/characters on screen (fourButton, 4)</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on fourButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '4'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When  I verify the element is displayed on screen as 4</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">2 </span></td><td><span style="font-size: 0.9em;">Validation Successful: Calculator display successfully shows the expected value: '4'.</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on cancelButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">3 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element 'C'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="26"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 01_Verify calculator application displays all numerals/characters on screen (fiveButton, 5)</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on fiveButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '5'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When  I verify the element is displayed on screen as 5</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">2 </span></td><td><span style="font-size: 0.9em;">Validation Successful: Calculator display successfully shows the expected value: '5'.</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on cancelButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">3 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element 'C'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="31"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 01_Verify calculator application displays all numerals/characters on screen (sixButton, 6)</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on sixButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '6'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When  I verify the element is displayed on screen as 6</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">2 </span></td><td><span style="font-size: 0.9em;">Validation Successful: Calculator display successfully shows the expected value: '6'.</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on cancelButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">3 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element 'C'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="36"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 01_Verify calculator application displays all numerals/characters on screen (sevenButton, 7)</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on sevenButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '7'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When  I verify the element is displayed on screen as 7</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">2 </span></td><td><span style="font-size: 0.9em;">Validation Successful: Calculator display successfully shows the expected value: '7'.</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on cancelButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">3 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element 'C'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="41"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 01_Verify calculator application displays all numerals/characters on screen (eightButton, 8)</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on eightButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '8'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When  I verify the element is displayed on screen as 8</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">2 </span></td><td><span style="font-size: 0.9em;">Validation Successful: Calculator display successfully shows the expected value: '8'.</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on cancelButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">3 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element 'C'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="46"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 01_Verify calculator application displays all numerals/characters on screen (nineButton, 9)</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on nineButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '9'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When  I verify the element is displayed on screen as 9</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">2 </span></td><td><span style="font-size: 0.9em;">Validation Successful: Calculator display successfully shows the expected value: '9'.</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on cancelButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">3 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element 'C'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="51"><span class="badge log fail-bg mr-2">Fail</span>Scenario: 01_Verify calculator application displays all numerals/characters on screen (sinButton, sin)</div>
+          </div>
+        </div>
+            <div class="">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on sinButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element 'Sin'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step fail-bg" title="">
+                    <span>When When: I verify the element is displayed on screen as sin</span>
+                    
+    <div>
+  The calculator display did not contain the expected execution total.
+  Expected string length 3 but was 5. Strings differ at index 0.
+  Expected: "sin"
+  But was:  "Error"
+  -----------^
+    </div>
+    <div>
+FAIL
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='C:\Users\ellip\Desktop\ASSIGNMENT\NewCode\CalculatorDeviceTest\CalculatorDeviceTest\Reports\Screenshots\632026 30739 PM.png' src="C:\Users\ellip\Desktop\ASSIGNMENT\NewCode\CalculatorDeviceTest\CalculatorDeviceTest\Reports\Screenshots\632026 30739 PM.png">
+  </div>
+ </div>
+    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="55"><span class="badge log fail-bg mr-2">Fail</span>Scenario: 01_Verify calculator application displays all numerals/characters on screen (cosButton, cos)</div>
+          </div>
+        </div>
+            <div class="">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on cosButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element 'Cos'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step fail-bg" title="">
+                    <span>When When: I verify the element is displayed on screen as cos</span>
+                    
+    <div>
+  The calculator display did not contain the expected execution total.
+  Expected string length 3 but was 5. Strings differ at index 0.
+  Expected: "cos"
+  But was:  "Error"
+  -----------^
+    </div>
+    <div>
+FAIL
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='C:\Users\ellip\Desktop\ASSIGNMENT\NewCode\CalculatorDeviceTest\CalculatorDeviceTest\Reports\Screenshots\632026 30742 PM.png' src="C:\Users\ellip\Desktop\ASSIGNMENT\NewCode\CalculatorDeviceTest\CalculatorDeviceTest\Reports\Screenshots\632026 30742 PM.png">
+  </div>
+ </div>
+    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="59"><span class="badge log fail-bg mr-2">Fail</span>Scenario: 01_Verify calculator application displays all numerals/characters on screen (tanButton, tan)</div>
+          </div>
+        </div>
+            <div class="">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on tanButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element 'Tan'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step fail-bg" title="">
+                    <span>When When: I verify the element is displayed on screen as tan</span>
+                    
+    <div>
+  The calculator display did not contain the expected execution total.
+  Expected string length 3 but was 5. Strings differ at index 0.
+  Expected: "tan"
+  But was:  "Error"
+  -----------^
+    </div>
+    <div>
+FAIL
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='C:\Users\ellip\Desktop\ASSIGNMENT\NewCode\CalculatorDeviceTest\CalculatorDeviceTest\Reports\Screenshots\632026 30746 PM.png' src="C:\Users\ellip\Desktop\ASSIGNMENT\NewCode\CalculatorDeviceTest\CalculatorDeviceTest\Reports\Screenshots\632026 30746 PM.png">
+  </div>
+ </div>
+    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="63"><span class="badge log fail-bg mr-2">Fail</span>Scenario: 01_Verify calculator application displays all numerals/characters on screen (logButton, log)</div>
+          </div>
+        </div>
+            <div class="">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on logButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element 'Log'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step fail-bg" title="">
+                    <span>When When: I verify the element is displayed on screen as log</span>
+                    
+    <div>
+  The calculator display did not contain the expected execution total.
+  Expected string length 3 but was 5. Strings differ at index 0.
+  Expected: "log"
+  But was:  "Error"
+  -----------^
+    </div>
+    <div>
+FAIL
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='C:\Users\ellip\Desktop\ASSIGNMENT\NewCode\CalculatorDeviceTest\CalculatorDeviceTest\Reports\Screenshots\632026 30750 PM.png' src="C:\Users\ellip\Desktop\ASSIGNMENT\NewCode\CalculatorDeviceTest\CalculatorDeviceTest\Reports\Screenshots\632026 30750 PM.png">
+  </div>
+ </div>
+    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="67"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 01_Verify calculator application displays all numerals/characters on screen (multiplyButton, *)</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on multiplyButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '×'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When  I verify the element is displayed on screen as *</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">2 </span></td><td><span style="font-size: 0.9em;">Validation Successful: Calculator display successfully shows the expected value: '*'.</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on cancelButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">3 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element 'C'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="72"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 01_Verify calculator application displays all numerals/characters on screen (divideButton, /)</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on divideButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '÷'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When  I verify the element is displayed on screen as /</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">2 </span></td><td><span style="font-size: 0.9em;">Validation Successful: Calculator display successfully shows the expected value: '/'.</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on cancelButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">3 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element 'C'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="77"><span class="badge log fail-bg mr-2">Fail</span>Scenario: 01_Verify calculator application displays all numerals/characters on screen (minusButton, −)</div>
+          </div>
+        </div>
+            <div class="">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on minusButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '-'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step fail-bg" title="">
+                    <span>When When: I verify the element is displayed on screen as −</span>
+                    
+    <div>
+  The calculator display did not contain the expected execution total.
+  String lengths are both 1. Strings differ at index 0.
+  Expected: "−"
+  But was:  "/"
+  -----------^
+    </div>
+    <div>
+FAIL
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='C:\Users\ellip\Desktop\ASSIGNMENT\NewCode\CalculatorDeviceTest\CalculatorDeviceTest\Reports\Screenshots\632026 30821 PM.png' src="C:\Users\ellip\Desktop\ASSIGNMENT\NewCode\CalculatorDeviceTest\CalculatorDeviceTest\Reports\Screenshots\632026 30821 PM.png">
+  </div>
+ </div>
+    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="81"><span class="badge log fail-bg mr-2">Fail</span>Scenario: 01_Verify calculator application displays all numerals/characters on screen (addButton, +)</div>
+          </div>
+        </div>
+            <div class="">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on addButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;">Web element addButton not found in CalculatorHome page  </span></td><td style="width: 6%; color: #FFFF00;"><strong>Fail</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step fail-bg" title="">
+                    <span>When When: I verify the element is displayed on screen as +</span>
+                    
+    <div>
+  The calculator display did not contain the expected execution total.
+  Expected: "+"
+  But was:  null
+    </div>
+    <div>
+FAIL
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='C:\Users\ellip\Desktop\ASSIGNMENT\NewCode\CalculatorDeviceTest\CalculatorDeviceTest\Reports\Screenshots\632026 30825 PM.png' src="C:\Users\ellip\Desktop\ASSIGNMENT\NewCode\CalculatorDeviceTest\CalculatorDeviceTest\Reports\Screenshots\632026 30825 PM.png">
+  </div>
+ </div>
+    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="85"><span class="badge log fail-bg mr-2">Fail</span>Scenario: 02_Verify calculator application performs bodmas operations - Run #1</div>
+          </div>
+        </div>
+            <div class="">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on fourButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '4'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on multiplyButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">2 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '×'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on leftParanthesisButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">3 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '('  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on fourButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">4 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '4'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on plusButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">5 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '+'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on eightButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">6 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '8'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on rightParanthesisButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">7 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element ')'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on divideButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">8 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '÷'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on twoButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">9 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '2'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on divideButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">10 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '÷'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on fiveButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">11 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '5'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on equalButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">12 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '='  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step fail-bg" title="">
+                    <span>When When: I verify the element is displayed on screen as 4.8</span>
+                    
+    <div>
+  The calculator display did not contain the expected execution total.
+  Expected string length 3 but was 2. Strings differ at index 1.
+  Expected: "4.8"
+  But was:  "48"
+  ------------^
+    </div>
+    <div>
+FAIL
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='C:\Users\ellip\Desktop\ASSIGNMENT\NewCode\CalculatorDeviceTest\CalculatorDeviceTest\Reports\Screenshots\632026 30833 PM.png' src="C:\Users\ellip\Desktop\ASSIGNMENT\NewCode\CalculatorDeviceTest\CalculatorDeviceTest\Reports\Screenshots\632026 30833 PM.png">
+  </div>
+ </div>
+    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="100"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 03_Verify calculator application performs decimal division operations - Run #2</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on eightButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '8'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on dotButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">2 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '.'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on zeroButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">3 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '0'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on eightButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">4 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '8'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on multiplyButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">5 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '×'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on nineButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">6 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '9'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on dotButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">7 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '.'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on zeroButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">8 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '0'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on nineButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">9 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '9'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on equalButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">10 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '='  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When  I verify the element is displayed on screen as 73.4472</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">11 </span></td><td><span style="font-size: 0.9em;">Validation Successful: Calculator display successfully shows the expected value: '73.4472'.</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="113"><span class="badge log fail-bg mr-2">Fail</span>Scenario: 04_Verify calculator application performs minus operations - Run #3</div>
+          </div>
+        </div>
+            <div class="">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on eightButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '8'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on minusButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">2 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '-'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on fourButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">3 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '4'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on equalButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">4 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '='  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step fail-bg" title="">
+                    <span>When When: I verify the element is displayed on screen as 4</span>
+                    
+    <div>
+  The calculator display did not contain the expected execution total.
+  Expected string length 1 but was 3. Strings differ at index 0.
+  Expected: "4"
+  But was:  "0.5"
+  -----------^
+    </div>
+    <div>
+FAIL
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='C:\Users\ellip\Desktop\ASSIGNMENT\NewCode\CalculatorDeviceTest\CalculatorDeviceTest\Reports\Screenshots\632026 30906 PM.png' src="C:\Users\ellip\Desktop\ASSIGNMENT\NewCode\CalculatorDeviceTest\CalculatorDeviceTest\Reports\Screenshots\632026 30906 PM.png">
+  </div>
+ </div>
+    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="120"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 05_Verify calculator application performs decimal multiplication operations - Run #4</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on eightButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '8'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on dotButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">2 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '.'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on zeroButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">3 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '0'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on eightButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">4 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '8'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on multiplyButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">5 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '×'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on nineButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">6 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '9'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on dotButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">7 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '.'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on zeroButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">8 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '0'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on nineButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">9 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '9'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on equalButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">10 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '='  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When  I verify the element is displayed on screen as 73.4472</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">11 </span></td><td><span style="font-size: 0.9em;">Validation Successful: Calculator display successfully shows the expected value: '73.4472'.</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="133"><span class="badge log fail-bg mr-2">Fail</span>Scenario: 06_Verify calculator application performs zero division operations - Run #5</div>
+          </div>
+        </div>
+            <div class="">
+              <div class="card-body">
+                  <div class="step pass-bg" title="">
+                    <span>Given  I launch calculator application</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on zeroButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">1 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '0'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on divideButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">2 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '÷'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on nineButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">3 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '9'  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then  I click on equalButton webelement present in CalculatorHome page</span>
+                    
+    <div>
+PASS    </div>
+    <div>
+<div style="position: relative;"><table id="logTable" style="border: 2px background-color: #D67757; table-layout: fixed; width: 100%;"><tr style="background-color: #20889C; color: black; height: 12px; line-height: 12px;"><th style="width: 6%; height: 12px; line-height: 12px;">No.</th><th style="height: 12px; line-height: 12px;">Step Description</th><th style="width: 6%; height: 12px; line-height: 12px;">Status</th></tr><tr style="height: 10px; line-height: 10px;"><td><span style="font-size: 1.5em;">&#8226;&nbsp;</span><span style="font-size: 0.9em;">4 </span></td><td><span style="font-size: 0.9em;"> Performed action 'CLICK' on element '='  in page 'CalculatorHome'</span></td><td style="width: 6%; color: #55FF55;"><strong>Pass</strong></td></tr></table></div>    </div>
+
+                  </div>
+                  <div class="step fail-bg" title="">
+                    <span>When When: I verify the element is displayed on screen as 0</span>
+                    
+    <div>
+  The calculator display did not contain the expected execution total.
+  Expected string length 1 but was 8. Strings differ at index 0.
+  Expected: "0"
+  But was:  "Infinity"
+  -----------^
+    </div>
+    <div>
+FAIL
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='C:\Users\ellip\Desktop\ASSIGNMENT\NewCode\CalculatorDeviceTest\CalculatorDeviceTest\Reports\Screenshots\632026 30917 PM.png' src="C:\Users\ellip\Desktop\ASSIGNMENT\NewCode\CalculatorDeviceTest\CalculatorDeviceTest\Reports\Screenshots\632026 30917 PM.png">
+  </div>
+ </div>
+    </div>
+
+                  </div>
+              </div>
+            </div>
+      </div>
+  </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="test-content scrollable">
+    <div class="test-content-tools">
+      <ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+    </div>
+    <div class="test-content-detail"><div class="detail-body"></div></div>
+  </div>
+</div>
+
+     
+
+<div class="container-fluid p-4 view dashboard-view">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Started</p>
+          <h3>03-06-2026 15:06:47</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Ended</p>
+          <h3>03-06-2026 15:09:18</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-pass">Features Passed</p>
+          <h3>0</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-fail">Features Failed</p>
+          <h3>1</h3>
+      </div></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Features</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='parent-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='0%'>
+            <b>0</b> features passed
+            </small>
+          </div>
+          <div>
+            <small data-tooltip='1%'><b>1</b> features failed, 
+            <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Scenarios</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='child-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='0%'><b>13</b> scenarios passed</small></div>
+          <div>
+            <small data-tooltip='0%'><b>10</b> scenarios failed, 
+            <b>0</b> skipped, <b data-tooltip='%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Steps</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='grandchild-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='0%'><b>105</b> Steps passed</small></div>
+          <div>
+            <small data-tooltip='0%'><b>10</b> steps failed, 
+            <b>0</b> skipped, <b data-tooltip='%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row"><div class="col-md-12">
+    <div class="card"><div class="card-header"><p>Timeline</p></div>
+      <div class="card-body pt-0"><div>
+        <canvas id="timeline" height="120"></canvas>
+      </div></div>
+    </div>
+  </div></div>
+  <script>
+	var timeline = { "CalculatorDeviceTest":150283.9507 };
+  </script>
+  <div class="row">
+      <div class="col-md-4 sysenv-container">
+      <div class="card">
+        <div class="card-header"><p>System/Environment</p></div>
+        <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+          <thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Author</td>
+              <td>Sreenath Mitrasenan</td>
+            </tr>
+            <tr>
+              <td>Machine Name</td>
+              <td>LAPTOP-7NLELTDQ</td>
+            </tr>
+            <tr>
+              <td>Username</td>
+              <td>ellip</td>
+            </tr>
+            <tr>
+              <td>OS Version</td>
+              <td>Microsoft Windows NT 10.0.26200.0</td>
+            </tr>
+            <tr>
+              <td>Processor Count</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Process ID</td>
+              <td>7884</td>
+            </tr>
+            <tr>
+              <td>System Dir</td>
+              <td>C:\WINDOWS\system32</td>
+            </tr>
+            <tr>
+              <td>Virtual Memory Size</td>
+              <td>4096MB</td>
+            </tr>
+            <tr>
+              <td>Environment</td>
+              <td>EM Test [ QAT ]</td>
+            </tr>
+            <tr>
+              <td>Run Time STart</td>
+              <td>03-06-2026 15:06:47</td>
+            </tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var statusGroup = {
+    parentCount: 1,
+    childCount: 23,
+    grandChildCount: 115,
+    eventsCount: 230,
+
+passParent:0,failParent:1,warningParent:0,skipParent:0,    
+passChild:13,failChild:10,warningChild:0,skipChild:0,infoChild:0,    
+passGrandChild:105,failGrandChild:10,warningGrandChild:0,skipGrandChild:0,infoGrandChild:0,    
+passEvents:210,failEvents:20,warningEvents:0,skipEvents:0,infoEvents:0,  };
+</script>
+
+    </div>
+   </div>
+  </div>
+ </div>
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/spark/js/spark-script.js"></script>
+<script type='text/javascript'></script>
+</body>
+</html>
